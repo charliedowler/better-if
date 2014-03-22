@@ -8,29 +8,39 @@ var ifs = require('better-if');
 
 //Objects
 ifs({
-    id: {
-        actual: 1,
-        expect: 1
-    }
+  id: {
+    expect: 1,
+    actual: 1
+  },
+  password: {
+    expect: /password/,
+    actual: 'password'
+  }
 }, function(results) {
-    console.log(results.id); //true
+  console.log(results.id); //true
 });
 
 // Bools
 ifs('testing' == 'testing', function(result) {
-    console.log(result); //true
+  console.log(result); //true
 });
 
 // String
 ifs('lol wut', function(result) {
-    console.log(result); //true
+  console.log(result); //true
 });
 
 // Array
-ifs([true == true, false, 'test' == 'test'], function(results) {
-    console.log(result[0]); //true
-    console.log(result[1]); //false
-    console.log(result[2]); //true
+ifs([true == true, false, 'test' == 'test', {
+  isAwesome: {
+    expect: true,
+    actual: true
+  }
+}], function(results) {
+  console.log(results[0]); //true
+  console.log(results[1]); //false
+  console.log(results[2]); //true
+  console.log(results[3].isAwesome); //true
 });
 
 // Without callback
