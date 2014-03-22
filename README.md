@@ -1,4 +1,4 @@
-# BetterIf (WIP)
+# BetterIf [![Build Status](https://travis-ci.org/charliedowler/better-if.svg?branch=master)](https://travis-ci.org/charliedowler/better-if)
 
 Simple module for better if statements
 
