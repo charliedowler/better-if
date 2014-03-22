@@ -1,0 +1,26 @@
+{
+  "name": "better-if",
+  "version": "0.0.1",
+  "description": "Better if statements",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/conditions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:charliedowler/better-if.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charliedowler/better-if/issues"
+  },
+  "homepage": "https://github.com/charliedowler/better-if",
+  "keywords": [
+    "better",
+    "if"
+  ],
+  "author": "charliedowler",
+  "license": "MIT",
+  "devDependencies": {
+    "simple-test-framework": "~0.1.2"
+  }
+}
