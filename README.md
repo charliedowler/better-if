@@ -1,4 +1,4 @@
-# BetterIf [![Build Status](https://travis-ci.org/charliedowler/better-if.svg?branch=master)](https://travis-ci.org/charliedowler/better-if)
+# BetterIf [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 Simple module for better if statements
 
@@ -47,3 +47,9 @@ ifs([true == true, false, 'test' == 'test', {
 var statement = ifs('true' == 'false');
 console.log(statement); //false
 ```
+
+[npm-url]: https://npmjs.org/package/better-if
+[npm-image]: https://badge.fury.io/js/better-if.png
+
+[travis-url]: http://travis-ci.org/charliedowler/better-if
+[travis-image]: https://secure.travis-ci.org/charliedowler/better-if.png?branch=master
